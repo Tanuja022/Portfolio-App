@@ -1,0 +1,41 @@
+#project{
+    margin: 168px 0;
+    height: 165vh;
+    
+    /* background: linear-gradient(to bottom, #4e54c8, #8f94fb); */
+    /* overflow: hidden; */
+}
+
+/* src/ProjectSection.css */
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 33px;
+    /* text-decoration: underline; */
+  }
+  .project-section {
+    display: block;
+    margin: 2rem 4rem;
+    
+  }
+  .row {
+    display: block;
+    flex-wrap: wrap;
+  }
+  #project{
+    height: 305vh;
+    
+  }
+}

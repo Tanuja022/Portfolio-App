@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(241, 240, 240);
+}
+
+.navbar {
+  background-color: #333;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-icon.active {
+  display: block;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-menu.active {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  flex-direction: column;
+  opacity: 0.95;
+  transition: all 0.5s ease;
+}
+
+.nav-item {
+  height: 20px;
+}
+
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+.nav-links:hover{
+  color: orange;
+}
+
+.nav-links:hover {
+  background-color: #555;
+  
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .menu-icon {
+    display: block; /* Ensure the menu icon is displayed */
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the icon is above other elements */
+  }
+
+}
