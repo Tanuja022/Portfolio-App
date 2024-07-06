@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="contact-us">
       <h2>Contact Us</h2>
       <p>
-                You can reach us via email at <a href="https://tanujakavilkar1357@gmail.com"><FaEnvelope/></a>
+                You can reach out via email at <a href="https://tanujakavilkar1357@gmail.com"><FaEnvelope/></a>
             </p>
     </div>
       </section>
